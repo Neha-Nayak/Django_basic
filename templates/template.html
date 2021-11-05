@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="pink">
+<a href="{{link}}">Home</a>
+<h1>Welcome to {{titles}}</h1>
+<h2>Multiplication</h2>
+<p>Enter two values to be multiplied:</p>
+<form action="expression" method="post">
+    {% csrf_token %}
+    Value1: <input type="text" name="text1">
+    Value2: <input type="text" name="text2">
+    <input type="Submit">
+</form>
+
+</body>
+</html>
